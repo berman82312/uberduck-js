@@ -1,9 +1,18 @@
 {
-  "name": "uberduck",
+  "name": "@littelfish/uberduck",
   "version": "0.0.1",
   "description": "Uberduck's REST API for web client",
-  "main": "index.js",
+  "main": "build/index.js",
+  "type": "module",
+  "types": "build/index.d.ts",
+  "author": "littlefish",
+  "license": "MIT",
+  "files": [
+    "build",
+    "README.md"
+  ],
   "scripts": {
+    "build": "npx tsc",
     "test": "vitest"
   },
   "repository": {
@@ -13,15 +22,12 @@
   "keywords": [
     "uberduck"
   ],
-  "author": "littlefish",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/berman82312/uberduck-js/issues"
   },
   "homepage": "https://github.com/berman82312/uberduck-js#readme",
   "devDependencies": {
     "@types/node": "^20.11.14",
-    "axios": "^1.6.7",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
     "vitest": "^1.2.2"

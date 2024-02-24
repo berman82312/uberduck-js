@@ -18,7 +18,10 @@ export class Http {
   }
 
   _makeHeader(options?: optionsType) {
-    let headers = {
+    let headers: {
+      "content-type": string;
+      Authorization?: string;
+    } = {
       "content-type": "application/json",
     };
     if (options?.basicAuthToken) {
