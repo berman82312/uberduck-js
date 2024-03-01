@@ -1,5 +1,5 @@
 {
-  "name": "@littelfish/uberduck",
+  "name": "@xsfish/uberduck",
   "version": "0.0.1",
   "description": "Uberduck's REST API for web client",
   "main": "build/index.js",
@@ -33,6 +33,7 @@
     "vitest": "^1.2.2"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://npm.pkg.github.com"
   }
 }
